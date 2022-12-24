@@ -58,7 +58,7 @@ Running docker compose file:
 
 - Go to the Nginx dashboard on the browser ht<span>tp://</span>house.prmsnls.xyz:81
     - Add a proxy host for `house.prmsnls.xyz` and map it to **Gateway IP** for WorkAdventure on port **9999**
-    - Go to SSL and get a certificate for the domain and toggle the **Force SSL**
+    - Go to SSL and get a certificate for `house.prmsnls.xyz` and toggle the **Force SSL**
     - Add a proxy host for `admin.house.prmsnls.xyz` and map it to **Gateway IP** for Niginx on port **81**.
     - Go to SSL and get a certificate for the domain and toggle the **Force SSL** option.
 
