@@ -26,8 +26,8 @@ Run the installer
 `./install-docker.sh`
 
 Login to NGinX Proxy Manager by going to ht<span>tp://</span>house.prmsnls.xyz:81 and use the default credentials: <br />
-*username: admin<span>@</span>example.com*
-*password: changeme*
+- *username: admin<span>@</span>example.com*
+- *password: changeme*
 
 ### Install WorkAdventure
 
