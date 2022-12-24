@@ -25,7 +25,7 @@ Change the permissions on the script to make it executable
 Run the installer
 `./install-docker.sh`
 
-Login to NGinX Proxy Manager by going to ht<span>tp://</span>://house.prmsnls.xyz:81 and use the default credentials of:
+Login to NGinX Proxy Manager by going to ht<span>tp://</span>house.prmsnls.xyz:81 and use the default credentials of:
 *username: admin<span>@</span>example.com*
 *password: changeme*
 
@@ -56,7 +56,7 @@ Running docker compose file:
 - Get the network details for the networks and note the "Gateway IPs"
 `docker network inspect <id>`
 
-- Go to the Nginx dashboard on the browser ht<span>tp://</span>://house.prmsnls.xyz:81
+- Go to the Nginx dashboard on the browser ht<span>tp://</span>house.prmsnls.xyz:81
     - Add a proxy host for `house.prmsnls.xyz` and map it to **Gateway IP** for WorkAdventure on port **9999**
     - Go to SSL and get a certificate for the domain and toggle the **Force SSL**
     - Add a proxy host for `admin.house.prmsnls.xyz` and map it to **Gateway IP** for Niginx on port **81**.
