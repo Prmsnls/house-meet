@@ -13,8 +13,8 @@ WorkAdventure is a web-based collaborative workspace presented in the form of a
 ## Setting up a production 
 __Setup for v1.12.11__
 
-Add DNS Entry for the Instance IP to map it to `house.prmsnls.xyz`
-In the intance, open the port 443 (HTTPS), 80(HTTP), 81(Nginx), 9999(WorkAdventure)
+- Add DNS Entry for the Instance IP to map it to `house.prmsnls.xyz`
+- In the intance, open the port 443 (HTTPS), 80(HTTP), 81(Nginx), 9999(WorkAdventure)
 (Port 81 and 9999 will be closed after the Setup)
 
 Docker, Docker-Compose, and NGinX Proxy Manager ([Source](https://github.com/bmcgonag/docker_installs))
@@ -25,14 +25,17 @@ Change the permissions on the script to make it executable
 Run the installer
 `./install-docker.sh`
 
-Login to NGinX Proxy Manager by going to http://house.prmsnls.xyz:81 and use the default credentials of:
-*username: admin@example.com*
+Login to NGinX Proxy Manager by going to [http://house.prmsnls.xyz:81]() and use the default credentials of:
+*username: [admin@example.com]()*
 *password: changeme*
 
 ### Install WorkAdventure
 
 Clone the Repository
 `git clone https://github.com/Prmsnls/house-meet.git`
+
+Open the Repository Folder:
+`cd house-meet`
 
 In the environment file (.env) modify following fields accordingly:
 - DOMAIN
@@ -53,7 +56,7 @@ Running docker compose file:
 - Get the network details for the networks and note the "Gateway IPs"
 `docker network inspect <id>`
 
-- Go to the Nginx dashboard on the browser (http://house.prmsnls.xyz:81)
+- Go to the Nginx dashboard on the browser [http://house.prmsnls.xyz:81]()
     - Add a proxy host for `house.prmsnls.xyz` and map it to **Gateway IP** for WorkAdventure on port **9999**
     - Go to SSL and get a certificate for the domain and toggle the **Force SSL**
     - Add a proxy host for `admin.house.prmsnls.xyz` and map it to **Gateway IP** for Niginx on port **81**.
